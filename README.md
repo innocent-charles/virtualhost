@@ -19,15 +19,6 @@ if you copy it without the .sh extension:
 $ sudo cp /path/to/virtualhost.sh /usr/local/bin/virtualhost
 ```
 
-### For Global Shortcut ###
-
-```bash
-$ cd /usr/local/bin
-$ wget -O virtualhost https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost.sh
-$ chmod +x virtualhost
-$ wget -O virtualhost-nginx https://raw.githubusercontent.com/RoverWire/virtualhost/master/virtualhost-nginx.sh
-$ chmod +x virtualhost-nginx
-```
 
 ## Usage ##
 
@@ -66,16 +57,4 @@ to delete a virtual host with custom directory name:
 ```
 $ sudo virtualhost delete anothersite.dev my_dir
 ```
-### Localization
 
-For Apache:
-
-```bash
-$ sudo cp /path/to/locale/<language>/virtualhost.mo /usr/share/locale/<language>/LC_MESSAGES/
-```
-
-For NGINX:
-
-```bash
-$ sudo cp /path/to/locale/<language>/virtualhost-nginx.mo /usr/share/locale/<language>/LC_MESSAGES/
-```
